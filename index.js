@@ -96,7 +96,7 @@ function displaySuggestions(suggestions) {
 
         li.addEventListener("click", () => {
             input.value = suggestion.value;
-            list.innerHTML = "";
+            list.style.display = "none";
             selectSuggestion(suggestion);
         });
 
